@@ -69,3 +69,4 @@ def coffee_machine():
 
 coffee_machine()
 print('Thank you for using the Coffee Machine')
+print('Please visit again')
