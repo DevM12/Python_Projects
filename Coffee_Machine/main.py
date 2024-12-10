@@ -68,3 +68,4 @@ def coffee_machine():
             print('Enter a valid input')
 
 coffee_machine()
+print('Thank you for using the Coffee Machine')
