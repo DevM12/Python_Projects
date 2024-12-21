@@ -9,7 +9,6 @@ screen.bgcolor('black')
 screen.title('My Snake game')
 screen.tracer(0)
 screen.listen()
-
 food=Food()
 snake=Snake()
 game_score=ScoreBoard()
