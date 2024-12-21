@@ -19,7 +19,6 @@ class CarManager:
     def cars_generator(self):
         for _ in range(0,20):
             rand_color=random.randint(0,5)
-            print(rand_color)
             color=COLORS[rand_color]
             car=Turtle('square')
             car.color(color)
