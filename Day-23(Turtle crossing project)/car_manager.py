@@ -8,8 +8,11 @@ MOVE_INCREMENT = 5
 
 def position_car(car):
     rand_y = float(random.randint(-230, 280))
-    car.goto(280, rand_y)
-    car.setheading(180)
+    if rand_y%20==0:
+        car.goto(280, rand_y)
+        car.setheading(180)
+    else:
+        position_car(car)
 
 class CarManager:
     def __init__(self):

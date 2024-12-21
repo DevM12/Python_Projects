@@ -23,7 +23,6 @@ class Player(Turtle):
     def move(self):
         self.forward(self.speed)
     def game_over(self):
-        self.shape('square')
         self.color('red')
         self.write('Game Over')
     pass
