@@ -24,5 +24,6 @@ class Player(Turtle):
         self.forward(self.speed)
     def game_over(self):
         self.shape('square')
+        self.color('red')
         self.write('Game Over')
     pass
