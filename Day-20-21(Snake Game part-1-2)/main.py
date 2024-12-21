@@ -25,10 +25,12 @@ def play_game():
             food.refresh()
             snake.new_segment()
         if snake.head.xcor()>280 or snake.head.xcor()< -280 or snake.head.ycor()>280 or snake.head.ycor()< -280:
-            game_is_on=game_score.game_over()
+            game_score.game_over()
+            snake.reset()
         for segment in snake.segments[1:]:
             if snake.head.distance(segment)<10:
-                game_is_on=game_score.game_over()
+                game_score.game_over()
+                snake.reset()
 screen.onkey(play_game, 'space')
 screen.onkey(snake.right_arrow, 'Right')
 screen.onkey(snake.up_arrow, 'Up')
