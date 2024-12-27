@@ -1,2 +1,1 @@
-Hello!!
-func=sheesh
+Hello!!  Sheesh
