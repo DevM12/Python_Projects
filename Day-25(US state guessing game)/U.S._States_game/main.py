@@ -31,10 +31,7 @@ while cont_game and len(guessed_states)<50:
         s.write(answer_state)
         count+=1
 if count<50:
-    missed_states=[]
-    for s in states:
-        if s not in guessed_states:
-            missed_states.append(s)
-            new_data=pandas.DataFrame(missed_states)
-            new_data.to_csv('states_to_learn.csv')
+    missed_states=[s for s in states if s not in guessed_states]
+    new_data=pandas.DataFrame(missed_states)
+    new_data.to_csv('states_to_learn.csv')
 mainloop()
